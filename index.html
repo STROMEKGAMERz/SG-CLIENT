@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SG Client</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SG</div>
+        <div><div class="brand-name">SG CLIENT</div><div class="brand-sub">MINECRAFT EXPERIENCE</div></div>
+      </div>
+      <div class="profile">
+        <div class="avatar">S</div>
+        <div class="profile-text"><b>Player</b><small>Offline profile</small></div>
+        <span class="status-dot"></span>
+      </div>
+      <div class="nav-label">LIBRARY</div>
+      <button class="nav-item active" data-page="home"><span>⌂</span> Home</button>
+      <button class="nav-item" data-page="instances"><span>▣</span> Instances</button>
+      <div class="nav-label">MODDING</div>
+      <button class="nav-item" data-page="mods"><span>◇</span> Mod Store</button>
+      <button class="nav-item" data-page="modpacks"><span>▦</span> Modpacks</button>
+      <button class="nav-item" data-page="resourcepacks"><span>▧</span> Resource Packs</button>
+      <button class="nav-item" data-page="shaders"><span>◈</span> Shaders</button>
+      <button class="nav-item" data-page="datapacks"><span>▤</span> Data Packs</button>
+      <div class="nav-label">PERSONALIZE</div>
+      <button class="nav-item" data-page="appearance"><span>♧</span> Skins & Capes</button>
+      <button class="nav-item" data-page="settings"><span>⚙</span> Settings</button>
+      <div class="sidebar-bottom"><span class="live-dot"></span> SG CLIENT <span class="version">v0.2.0</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="breadcrumb">SG CLIENT <span>/</span> <b id="crumb">HOME</b></div>
+        <div class="top-actions"><span class="chip">● LOCAL PROFILE</span><button class="icon-btn" title="Settings" data-goto="settings">⚙</button></div>
+      </header>
+
+      <section class="page active-page" id="page-home">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><i></i> YOUR NEXT ADVENTURE STARTS HERE</div>
+            <h1>WELCOME TO<br><em>SG CLIENT.</em></h1>
+            <p>Your Minecraft. Your style. One place for versions, mods, packs and performance.</p>
+            <button class="primary-btn" id="play-btn">▶ &nbsp; PLAY MINECRAFT</button>
+            <div class="hero-note">Launcher foundation preview · Game engine connection is the next stage</div>
+          </div>
+          <div class="hero-art">
+            <div class="ring ring-one"></div><div class="ring ring-two"></div>
+            <div class="sg-watermark">SG</div><div class="art-tag">STROMEKGAMERz<br><b>OFFICIAL CLIENT</b></div>
+          </div>
+        </div>
+        <div class="section-heading"><div><small>QUICK ACCESS</small><h2>YOUR WORKSPACE</h2></div><span class="muted">Manage your Minecraft setup</span></div>
+        <div class="quick-grid">
+          <button class="quick-card" data-goto="mods"><span class="quick-icon">◇</span><b>Mods</b><small>Browse and manage mods</small><span class="arrow">↗</span></button>
+          <button class="quick-card" data-goto="modpacks"><span class="quick-icon">▦</span><b>Modpacks</b><small>Organize your modpacks</small><span class="arrow">↗</span></button>
+          <button class="quick-card" data-goto="resourcepacks"><span class="quick-icon">▧</span><b>Resource Packs</b><small>Change your game look</small><span class="arrow">↗</span></button>
+          <button class="quick-card" data-goto="shaders"><span class="quick-icon">◈</span><b>Shaders</b><small>Manage visual effects</small><span class="arrow">↗</span></button>
+        </div>
+        <div class="bottom-grid">
+          <div class="panel"><div class="panel-head"><b>ACTIVE INSTANCE</b><span class="pill red-pill">NOT CONNECTED</span></div><h3>Choose your Minecraft setup</h3><p>Select a version and loader in Instances. Game installation and launch integration are not connected in this preview.</p><button class="text-btn" data-goto="instances">OPEN INSTANCES →</button></div>
+          <div class="panel performance"><div class="panel-head"><b>PERFORMANCE PROFILE</b><span class="pill green-pill">LOW-END READY</span></div><div class="perf-value">4 GB <small>PC TARGET</small></div><p>Lightweight defaults · Shaders off by default · Adjustable memory settings planned.</p></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-instances">
+        <div class="page-title"><small>GAME LIBRARY</small><h1>INSTANCES</h1><p>Keep different Minecraft versions and modded profiles separate.</p></div>
+        <div class="panel instance-panel"><div class="instance-badge">MC</div><div class="instance-info"><b>No instances yet</b><p>Your installed game profiles will appear here.</p></div><button class="outline-btn" data-notice="Instance installation will be added when the game-management backend is connected.">＋ CREATE INSTANCE</button></div>
+        <div class="info-strip">Planned loaders: <b>Vanilla · Fabric · Forge · NeoForge</b><span>Compatibility depends on Minecraft version.</span></div>
+      </section>
+
+      <section class="page" id="page-mods">
+        <div class="page-title"><small>MODDING HUB</small><h1>MOD STORE</h1><p>Discover performance, utility and PvP mods in one place.</p></div>
+        <div class="search-row"><input placeholder="Search mods (coming with catalog integration)" disabled><span class="filter">ALL MODS⌄</span></div>
+        <div class="feature-grid">
+          <div class="feature-card"><strong>SODIUM</strong><small>Performance</small><p>Planned performance renderer for supported Fabric versions.</p><span class="tag">PLANNED</span></div>
+          <div class="feature-card"><strong>LITHIUM</strong><small>Optimization</small><p>Planned game logic optimization.</p><span class="tag">PLANNED</span></div>
+          <div class="feature-card"><strong>ZOOM</strong><small>Utility</small><p>Configurable zoom control.</p><span class="tag">PLANNED</span></div>
+          <div class="feature-card"><strong>ARMOR HUD</strong><small>PvP HUD</small><p>Show armor status on screen.</p><span class="tag">PLANNED</span></div>
+          <div class="feature-card"><strong>KEYSTROKES</strong><small>PvP HUD</small><p>Display movement keys and CPS.</p><span class="tag">PLANNED</span></div>
+          <div class="feature-card"><strong>CROSSHAIR</strong><small>Visual</small><p>Customize the in-game crosshair.</p><span class="tag">PLANNED</span></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-modpacks">
+        <div class="page-title"><small>CURATED SETUPS</small><h1>MODPACKS</h1><p>Install and maintain complete collections as separate instances.</p></div>
+        <div class="empty-state"><div class="empty-symbol">▦</div><h2>YOUR MODPACK LIBRARY</h2><p>Modpack catalog and one-click installation will be connected in a later build.</p></div>
+      </section>
+      <section class="page" id="page-resourcepacks">
+        <div class="page-title"><small>GAME CUSTOMIZATION</small><h1>RESOURCE PACKS</h1><p>Manage textures, sounds and visual styles.</p></div>
+        <div class="empty-state"><div class="empty-symbol">▧</div><h2>MAKE MINECRAFT YOURS</h2><p>Local pack import, preview, enable and disable controls are planned.</p></div>
+      </section>
+      <section class="page" id="page-shaders">
+        <div class="page-title"><small>VISUAL EXPERIENCE</small><h1>SHADERS</h1><p>Manage shader packs for compatible Iris or OptiFine setups.</p></div>
+        <div class="warning">⚠ For a 4 GB RAM PC, shaders will be optional and disabled by default to help preserve performance.</div>
+        <div class="empty-state"><div class="empty-symbol">◈</div><h2>SHADER LIBRARY</h2><p>Shader installation and compatibility checks are planned.</p></div>
+      </section>
+      <section class="page" id="page-datapacks">
+        <div class="page-title"><small>WORLD CUSTOMIZATION</small><h1>DATA PACKS</h1><p>Data packs are managed per world, not as global client mods.</p></div>
+        <div class="empty-state"><div class="empty-symbol">▤</div><h2>WORLD DATA PACKS</h2><p>World selection, import and pack management are planned.</p></div>
+      </section>
+      <section class="page" id="page-appearance">
+        <div class="page-title"><small>PLAYER IDENTITY</small><h1>SKINS & CAPES</h1><p>Customize your player appearance where account and server support allow it.</p></div>
+        <div class="empty-state"><div class="empty-symbol">♧</div><h2>YOUR SG STYLE</h2><p>Skin and cape preview, upload and account linking are planned. Custom capes may not appear on every multiplayer server.</p></div>
+      </section>
+      <section class="page" id="page-settings">
+        <div class="page-title"><small>CONFIGURATION</small><h1>SETTINGS</h1><p>Launcher preferences for your PC.</p></div>
+        <div class="settings-card"><label>Target memory preset</label><div class="setting-value">1.5–2 GB <small>Suggested starting range for a 4 GB PC</small></div><div class="setting-line"></div><label>Visual effects</label><div class="setting-value">Shaders and motion blur OFF by default</div><div class="setting-line"></div><label>Account security</label><div class="setting-value">Official Microsoft sign-in planned. Never enter your password into an unofficial form.</div></div>
+      </section>
+      <div class="toast" id="toast"></div>
+    </main>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

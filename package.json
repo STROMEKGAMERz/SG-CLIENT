@@ -1,0 +1,20 @@
+{
+  "name": "sg-client",
+  "version": "0.2.0",
+  "description": "SG Client - custom Minecraft launcher shell",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.stromekgamerz.sgclient",
+    "productName": "SG Client",
+    "win": { "target": "nsis" },
+    "directories": { "output": "release" }
+  }
+}
